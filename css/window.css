@@ -1,0 +1,88 @@
+*{
+	padding:0;
+	margin:0;
+}
+
+body{
+	font-size:14px;
+	font-family: '微软雅黑';
+	color:#333;
+}
+
+.window_mask{
+	position: absolute;
+	top:0;
+	left: 0;
+	width:100%;
+	height:100%;
+	background-color: rgba(0,0,0,.5);
+}
+.window_boundingBox{
+	position: fixed;
+	z-index:100;
+	width:300px;
+	height:200px;
+	text-align: center;
+	border:1px solid #f90;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.window_header{
+	width:100%;
+	height:40px;
+	font-size: 16px;
+	color:#fff;
+	line-height: 40px;
+	border-radius: 10px 10px 0 0;
+	background-color: #111;
+}
+
+.window_body{
+	padding:20px 0;
+}
+.window_footer{
+	text-align: center;
+}
+
+.window_footer input{
+	width:50px;
+	height:30px;
+	line-height: 30px;
+	text-align: center;
+	border:none;
+	border-radius: 5px;
+}
+
+.window_footer input[type='button']{
+	cursor:pointer;
+}
+
+.window_cancelBtn{
+	margin-left: 10px;
+}
+
+.window_closeBtn{
+	width:40px;
+	height:40px;
+	position: absolute;
+	top:0;
+	right:0;
+	background-color: blue;
+	text-align: center;
+	line-height: 40px;
+	cursor:pointer;
+}
+.window_closeBtn:hover{
+	background-color:lightblue;
+}
+
+
+/*skin for a */
+.window_skin_a .window_header{
+	background-color:#f30;
+}
+.window_skin_a .window_footer input{
+	color:#fff;
+	background-color:#f30;
+}
